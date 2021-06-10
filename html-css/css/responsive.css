@@ -1,0 +1,137 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    
+    .logo {
+      margin-left: 10px;
+    }
+
+    .btn-wrapper {
+      text-align: center;
+    }
+  
+    .main-wrapper {
+      text-align: center;
+    }
+    
+    .main-wrapper h1 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    .main-wrapper h2 {
+      font-size: 26px;
+      line-height: 30px;
+
+    }
+    
+    .main-wrapper p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .btn-belanja{
+        padding: 8px 20px;
+        color:white;
+        display: inline-block;
+        opacity: 0.8;
+        border-radius: 25px;
+        margin: 25px 0;
+        background-color: black;
+    }
+
+    .about-wrapper img {
+        width: 384px;
+    }
+  }
+  
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+    .menu{
+        display: none;
+    }
+
+    span.menu-icon{
+        display: block;
+        margin-right: 10px;
+    }
+    
+    .logo {
+      margin-left: 10px;
+    }
+
+    .btn-wrapper {
+      text-align: center;
+    }
+  
+    .main-wrapper {
+      text-align: center;
+    }
+    
+    .main-wrapper h1 {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    .main-wrapper h2 {
+      font-size: 20px;
+      line-height: 30px;
+
+    }
+    
+    .main-wrapper p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    /* Products Responsive */
+
+    .product {
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-item {
+        margin-bottom: 30px;
+    }
+
+    /* About Responsive CSS */
+
+    .about-wrapper .content{
+        display:inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-wrapper {
+        padding-bottom: 50px;
+    }
+
+    .about-wrapper img {
+        width: 256px;
+    }
+
+    .content p {
+        font-size:14px;
+        text-align:left;
+    }
+
+    /* Products & About Wrapper Container Responsive CSS */
+
+    .products-wrapper .container, .about-wrapper .container{
+        margin: 0 auto;
+        width: 75%;
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    /* Product Title & About Wrapper Section Title Responsive CSS */
+
+    .products-title, .about-wrapper .section-title {
+        font-size: 24px;
+    }
+
+    .to-top{
+        right: 30px;
+    }
+}

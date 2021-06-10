@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="DTS FGA C05">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Medical - DTS FGA C05">
+    <meta name="description" content="Medical - DTS FGA C05">
+
+    <title>Medical.</title>
+
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f6f3336b8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Back to top -->
+    <a href="#" class="to-top"></a>
+    <!-- End back to top -->
+    <!-- Header section-->
+    <header>
+        <div class="container">
+            <div class="brand">
+                <img class="logo" src="images/logo.png" alt="Icon Medical">
+            </div>
+            <!-- Hamburger menu -->
+            <span class="fa fa-bars menu-icon"></span>
+            <!-- End hamburger menu -->
+            <div class="menu">
+                <a href="#main">Beranda</a>
+                <a href="#product">Produk Kami</a>
+                <a href="#about">Tentang Kami</a>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- Main section -->
+    <div class="main-wrapper" id="main">
+        <div class="container">
+            <h1>HEALTHY IS EVERYTHING</h1>
+            <h2>Sehat dimulai dari diri sendiri</h2>
+            <p>Ayo menjadi lebih sehat bersama Medical.</p>
+            <div class="btn-wrapper">
+                <a href="#product" class="btn-belanja">Mulai Belanja!</a>
+            </div>
+        </div>
+    </div>
+    <!-- End section -->
+    <!-- Products section-->
+    <div class="products-wrapper" id="product">
+        <div class="container">
+            <div class="products-title">
+                <h3>Produk Kami</h3>
+            </div>
+            <div class="product">
+                <div class="product-item">
+                    <h4>Masker</h4>
+                    <img src="images/masker.png" alt="" />
+                    <h4>Rp 20.000</h4>
+                    <div class="qty">
+                        <input onclick="buttonJumlah(this, '-')" class="btn jumlah" type="button" value="-" />
+                        <input class="inputJumlah" type="number" min="0" value="0" />
+                        <input onclick="buttonJumlah(this, '+')" class="btn jumlah" type="button" value="+" />
+                    </div>
+                    <input class="btn pesan" type="button" value="PESAN SEKARANG" />
+                </div>
+                <div class="product-item">
+                    <h4>Hand Sanitizer</h4>
+                    <img src="images/handsanitizer.png" alt="" />
+                    <h4>Rp 12.000</h4>
+                    <div class="qty">
+                        <input onclick="buttonJumlah(this, '-')" class="btn jumlah" type="button" value="-" />
+                        <input class="inputJumlah" type="number" min="0" value="0" />
+                        <input onclick="buttonJumlah(this, '+')" class="btn jumlah" type="button" value="+" />
+                    </div>
+                    <input class="btn pesan" type="button" value="PESAN SEKARANG" />
+                </div>
+                <div class="product-item">
+                    <h4>Vitamin C</h4>
+                    <img src="images/vitaminc.png" alt="" />
+                    <h4>Rp 15.000</h4>
+                    <div class="qty">
+                        <input onclick="buttonJumlah(this, '-')" class="btn jumlah" type="button" value="-" />
+                        <input class="inputJumlah" type="number" min="0" value="0" />
+                        <input onclick="buttonJumlah(this, '+')" class="btn jumlah" type="button" value="+" />
+                    </div>
+                    <input class="btn pesan" type="button" value="PESAN SEKARANG" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End products section -->
+    <!-- About section -->
+    <div class="about-wrapper" id="about">
+        <div class="container">
+            <h3 class="section-title">About Us</h3>
+            <div class="content">
+                <img src="images/img1.png" alt="" />
+                <p>
+                    We’re here to fullfill your needs. We always prioritize your health
+                    and provide the best service you have ever felt
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End about section -->
+    <!-- Footer section -->
+    <footer>
+        <div class="container">
+            <p class="footer"><span>&copy; 2021 DTS FGA C05</span></p>
+        </div>
+    </footer>
+    <!-- End footer section -->
+
+    <!-- Script to calling file script.js on js folder -->
+    <script src="js/script.js"></script>
+
+    <!-- Javascript to make back to top icon on right corner -->
+    <script>
+        $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#scroll').fadeIn();
+                    } else {
+                        $('#scroll').fadeOut();
+                    }
+                });
+                $('#scroll').click(function () {
+                    $("html, body").animate({ scrollTop: 0 }, 600);
+                    return false;
+                });
+            });
+    </script>
+</body>
+</html>

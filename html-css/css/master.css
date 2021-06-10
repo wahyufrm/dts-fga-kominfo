@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.clear {
+    clear: left;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+/* Menu CSS */
+
+header{
+    height: 65px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.brand{
+    float: left;
+}
+
+.logo{
+    width: 124px;
+    margin-top: 20px;
+}
+
+span.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+}
+
+.menu{
+    float: right;
+    margin-right: -25px;
+}
+
+.menu a{
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.menu a:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Main CSS */
+
+.main-wrapper{
+   padding: 180px 0 220px 0;
+    background-image: url(../images/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: black;
+    text-align: center;
+}
+
+.main-wrapper h1{
+    opacity: 1;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.main-wrapper h2{
+    opacity: 1;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.main-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+}
+  
+.btn-wrapper {
+   margin: 20px 0;
+}
+
+.btn-belanja{
+    padding: 8px 30px;
+    color:white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 30px;
+    margin: 30px 0;
+    background-color: black;
+
+}
+
+.btn-belanja:hover {
+    opacity: 1;
+}
+
+/* Products CSS */
+.products-title {
+	font-size: 32px;
+	color: white;
+	border-bottom: 1px solid #fff;
+	margin-bottom:30px;
+	margin-top: 10px;
+}
+
+.products-wrapper .container{
+    margin: 0 auto;
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 40px 0;
+}
+
+.products-wrapper {
+    padding-top: 25px;
+	background: #797979;
+}
+
+.product {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.product-item {
+    float: left;
+    width: 100%;
+	background: white;
+	border-radius: 10px;
+	padding: 30px 0;
+    margin-right: 30px;
+}
+
+.product-item h4 {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.product-item img {
+	height: 220px;
+	margin-bottom: 30px;
+}
+
+.product-item .btn {
+	display: inline-block;
+	border-radius: 90px;
+	box-shadow: 0 7px #ddd;
+	color: black;
+	font-weight: bold;
+	margin: 20px 0;
+	text-align: center;
+	border: none;
+}
+
+.product-item .btn:active {
+	position: relative;
+	top: 7px; 
+	box-shadow: none;
+}
+
+.inputJumlah {
+	width: 50px;
+	height: 40px;
+	border: none;
+	font-size: 23px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.product-item .jumlah{
+	width: 50px;
+	height: 40px;
+	margin: 0 5px;
+	font-size: 23px;
+	border-radius: 10px;
+	background: #F4E875;
+	color: balck;
+	line-height: 40px;
+}
+
+.product-item .pesan {
+	background-color: #6AC373;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	color: white;		
+}
+
+/* About Us CSS */
+
+.about-wrapper .container{
+    margin: 0 auto;
+    width: 100%;
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	/* background-color:salmon; */
+	padding: 40px 0;
+}
+
+.about-wrapper .section-title {
+	font-size: 32px;
+	color: white;
+	border-bottom: 1px solid #fff;
+	margin-bottom:30px;
+	margin-top: 10px;
+}
+
+.about-wrapper .content{
+    display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-wrapper img {
+	width: 512px;
+}
+
+.content p {
+	font-size:24px;
+	text-align:left;
+	color: white;
+}
+
+.about-wrapper {
+    padding-top: 25px;
+	background: #5A5A5A;
+}
+
+.about-wrapper img {
+	margin-right:10px;
+	background: #ddd;
+}
+
+/* Footer CSS */
+
+footer{
+    height: 100px;
+	background-color: black;
+}
+
+.footer{
+    color: white;
+    font-weight: bold;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 30px;
+}
+
+/* Back to top CSS */
+.to-top {
+    width:50px; 
+    height:50px; 
+    position:fixed; 
+    bottom:50px; 
+    right: 50px; 
+    z-index:99; 
+    cursor:pointer; 
+    border-radius:100px; 
+    transition:all .5s; 
+    background:#6AC373 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
+.to-top:hover {
+    background:black url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
